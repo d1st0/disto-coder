@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="keywords" content="formulario, contacto, hablemos, saber mas, dudas, escribinos, idea, proyecto">
+    <title>Contacto | Disto - Agencia de Diseño para productos y marcas</title>
+    <meta name="description" content="¡Hablemos! Contanos tus ideas y proyectos para poder armar una propuesta personalizada">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-bar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../sources/logo-blue.png" alt="" width="100">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./servicios.html">Todos los servicios</a></li>
+                            <li><a class="dropdown-item" href="#">Branding</a></li>
+                            <li><a class="dropdown-item" href="#">Diseño UX/UI</a></li>
+                            <li><a class="dropdown-item" href="#">Desarrollo</a></li>
+                            <li><a class="dropdown-item" href="#">Consultoria</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./casos.html">Casos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                    </ul>                
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="heroSeccion">
+            <h1 class="titulosSecciones">¿Tenés un proyecto en mente? ¡Hablemos!</h1>
+        </div>
+
+        <h2 class="subtitulosSecciones">Contacto</h2>
+
+        <form action="" class="formGral">
+            <div class="campoForm">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Nombre">
+            </div>
+
+            <div class="campoForm">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="Apellido">
+            </div>
+
+            <div class="campoForm">
+                <label for="correo">Email</label>
+                <input type="email" name="correo" placeholder="Ingresá un correo válido">
+            </div>
+
+            <div class="campoForm">
+                <label for="pais">Seleccioná tu país</label>
+                <select name="pais" id="">
+                    <option value="arg">Argentina</option>
+                    <option value="bra">Brasil</option>
+                    <option value="cl">Chile</option>
+                    <option value="col">Colombia</option>
+                    <option value="mx">México</option>
+                    <option value="pe">Perú</option>
+                    <option value="uy">Uruguay</option>
+                </select>
+            </div>
+
+            <div class="campoForm--extend">
+                <label for="comentario">Comentarios</label>
+                <textarea name="comentario" id="" cols="30" rows="10" placeholder="Contanos más de tu proyecto"></textarea>
+            </div>
+
+            <div class="campoForm--inline">
+                <input type="checkbox" name="contacto" id="">
+                <label for="contacto">Los datos ingresados son correctos</label>
+
+            </div>
+
+            <input type="submit" value="Enviar Formulario" class="buttonForm">
+        </form>
+    </main>
+
+    <footer class="footerStyle">
+        <div class="copy2">
+            &copy;2021 - desarrollado por <a href="#">distó</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

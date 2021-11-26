@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EFF1F7;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    height: 68px;
+    align-items: center;
+    box-shadow: 0px 10px 20px rgb(50 52 59 / 10%);
+    z-index: 9000;
+}
+
+.navbar {
+    width: 1120px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.bg-light {
+    --bs-bg-opacity: 0;
+}
+
+.logoHeader {
+    position: relative;
+    display: flex;
+    margin: 0px 0px 0px 24px;
+}
+.listaMenu{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+li a {
+    padding: 12px 24px;
+    display: flex;
+    text-decoration: none;
+    color: #0055FF;
+}
+
+li a:hover {
+    color: tomato;
+}
+
+.heroPadre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70vh;
+    padding-top: 150px;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(#0055FF, #282C38);
+
+}
+
+
+.tituloIndex {
+    max-width: 1000px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 56px;
+}
+
+.chevDown {
+    width: 48px;
+    height: 48px;
+    animation-name: scroll;
+    animation-iteration-count: 10;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0px)
+    }
+
+    50% {
+        transform: translateY(5px)
+    }
+
+    100% {
+        transform: translateY(0px)
+    }
+    
+}
+
+.titulosSecciones {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: white;
+    max-width: 1120px;
+}
+
+.subtitulosSecciones {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    padding: 36px;
+}
+
+.subtitulosSecciones--index {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.tituloDescripcion {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.descripcionSeccion {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 21px;
+}
+
+.seccionImg {
+    display: flex;
+    width: 1120px;
+    height: 460px;
+    margin: 76px auto;
+    justify-content: space-between;
+}
+
+.seccionFlex {
+    position: relative;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.imgServicios {
+    padding: 64px;
+}
+
+
+.nuestrosClientes {
+    position: relative;
+    display: flex;
+    height: 200px;
+    margin: 0px auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1120px;
+}
+
+.logoClientes {
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    object-fit: fill;
+}
+
+
+.flexibleCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1120px;
+    height: 600px;
+    justify-content: space-between;
+    margin: 64px auto;
+}
+
+.cardContainer {
+    width: 80%;
+    position: relative;
+    max-width: 1120px;
+    height: 460px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 16px;
+    transition: all .8s;
+}
+
+.cardContainer:hover {
+    box-shadow: 0px 10px 20px rgb(50 52 59 / 10%);
+    width: 105%;
+    cursor: pointer;
+}
+
+
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:  24px;
+    max-width: 400px;
+    
+}
+
+.cardTag {
+    color: rgb(17, 100, 225);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+.cardTitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.parrafoCard {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.botonEnlace {
+    background-color: rgb(17, 100, 225);
+    padding: 0px 24px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 48px;
+    border-radius: 8px;
+}
+
+.botonEnlace a {
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.imgContainer {
+    width: 200%;
+    background-color: gray;
+    background-image: url(../sources/bancon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px 16px 16px 0px;
+
+}
+
+.imgCard {
+    object-fit: cover;
+}
+
+.footerStyle {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    background-color: #282C38;
+    color: white;
+    max-width: 100%;
+    height: 200px;
+}
+
+.parrafoServicio {
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 24px;
+}
+
+
+.footerStyle a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.copy2 {
+    padding: 20px 0px;
+}
+
+.heroSeccion {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 100px 0px 40px 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: #282C38;
+}
+
+.serviciosPadre {
+    width: 1120px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 48px auto;
+    justify-content: space-between;
+}
+
+
+.bloqueServicios {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 40%;
+    margin-bottom: 24px;
+    padding: 24px;
+    border-radius: 16px;
+    transition: all .5s;
+}
+
+.bloqueServicios:hover {
+    box-shadow: 2px 10px 20px rgb(50, 52, 59, 0.2);
+
+}
+
+.nosotrosFlex {
+    width: 1120px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+}
+
+.mainArticle {
+    width: auto;
+    padding: 24px;
+}
+
+.mainArticle--2 {
+    width: 500px;
+    padding: 24px;
+}
+
+.equipoFlex {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto 48px;
+}
+
+.imgEquipo {
+    height: 100%;
+    min-width: 25%;
+    margin: 0px;
+    padding: 0px;
+    object-fit: cover;
+}
+/* 
+.mainContact {
+    display: flex;
+} */
+
+.formGral {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-evenly;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    margin: 24px;
+}
+
+.buttonForm {
+    position: relative;
+    width: 160px;
+    height: 48px;
+    border-style: hidden;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    box-shadow: 2px 10px 20px rgb(50, 52, 59, 0.2);
+
+}
+.buttonForm:hover {
+    background-color: rgb(45, 45, 61);
+    color: white;
+}
+
+
+
+/* GRIDS ÁREAS*/
+.imgGrid {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imgGrid:hover {
+    background-color: #141927;
+    opacity: 55%;
+}
+
+.workGrid {
+    display: grid;
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    padding-top: 68px;
+    grid-template-areas: 
+    "filtro filtro filtro filtro filtro "
+    "bancon bancon molly molly dr"
+    "bancon bancon herencia huju huju"
+    "nike nike nike adidas adidas"    
+    ;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 68px repeat(3, 35vh);
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.filtroCategoria {
+    font-size: 21px;
+}
+
+
+
+/* DECLARAR ÁREAS */
+.subHeader {    
+    grid-area: filtro;
+    background-color: #ffffff;
+    color:#282C38;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    grid-area: filtro;
+}
+
+.subHeader a{
+    text-decoration: none;
+    color:#282C38;
+}
+
+.subHeader a:hover{
+    text-decoration: none;
+    color: rgb(17, 100, 225);
+}
+
+.bancon {
+    display: flex;
+    grid-area: bancon;
+    background-color: #445072;
+    align-items: center;
+    justify-content: center;
+}
+.molly {
+    display: flex;
+    grid-area: molly;
+    background-color: #7a8196;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+}
+.drCall {
+    display: flex;
+    grid-area: dr;
+    background-color: #2b385e;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+}
+.herencia {
+    display: flex;
+    grid-area: herencia;
+    background-color: #18213d;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+}
+.huju {
+    display: flex;
+    grid-area: huju;
+    background-color: #343c57;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+}
+.nike {
+    display: flex;
+    grid-area: nike;
+    background-color: #596791;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+}
+.adidas {
+    display: flex;
+    grid-area: adidas;
+    background-color: #141927;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+@media all and (max-width: 1024px) {
+    .workGrid {
+        display: grid;
+        width: 100%;
+        height: 120vh;
+        position: relative;
+        padding-top: 68px;
+        grid-template-areas: 
+        "filtro filtro"
+        "bancon bancon"
+        "molly dr"
+        "herencia huju"
+        "nike adidas"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px repeat(4, 250px);
+        margin-bottom: 20px;
+    }
+    .tituloIndex {
+        max-width: 720px;
+        font-family: 'DM Sans', sans-serif;
+        text-align: center;
+        color: white;
+        font-weight: 500;
+        font-size: 40px;
+    }
+
+    .titulosSecciones {
+        font-size: 36px;
+        padding: 72px;
+    }
+    .serviciosPadre {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 48px auto;
+        justify-content: space-between;
+    }
+    .bloqueServicios {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 90%;
+        margin-bottom: 24px;
+        padding: 24px;
+        border-radius: 16px;
+        transition: all .5s;
+    }
+}
+
+.campoForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60px;
+    margin-bottom: 24px;
+}
+
+.campoForm--extend {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 240px;
+    flex-direction: column;
+}
+.campoForm--inline {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+@media all and (max-width: 600px) {
+    .workGrid {
+        display: grid;
+        position: relative;
+        width: 100%;
+        height: 2000px;
+        padding-top: 68px;
+        grid-template-areas: 
+        "filtro"
+        "bancon"
+        "molly"
+        "dr"
+        "herencia"
+        "huju"
+        "nike"
+        "adidas"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px repeat(7, 260px);
+    }
+    .heroSeccion {
+        height: 30vh;
+    }
+    .tituloIndex {
+        max-width: 400px;
+        font-family: 'DM Sans', sans-serif;
+        text-align: center;
+        color: white;
+        font-weight: 500;
+        font-size: 28px;
+    }
+    .titulosSecciones {
+        font-size: 28px;
+        padding: 24px;
+    }
+    .serviciosPadre {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 48px auto;
+        justify-content: space-between;
+    }
+    .bloqueServicios {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 90%;
+        margin-bottom: 24px;
+        padding: 24px;
+        border-radius: 16px;
+        transition: all .5s;
+    }
+}
